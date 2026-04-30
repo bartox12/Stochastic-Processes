@@ -1,12 +1,12 @@
-# Analiza MFPT z Resetowaniem Stochastycznym (Stochastic Resetting)
+# MFPT Analysis with Stochastic Resetting
 
-Projekt analizuje zjawisko stochastycznego resetowania w jednowymiarowym procesie dyfuzji. Celem jest zbadanie Średniego Czasu Pierwszego Przejścia (MFPT - Mean First Passage Time) do celu oraz znalezienie optymalnego wskaźnika resetowania ($\lambda^*$), który ten czas minimalizuje. 
+This project analyzes the phenomenon of stochastic resetting in a one-dimensional diffusion process. The goal is to investigate the Mean First Passage Time (MFPT) to a target and find the optimal resetting rate ($\lambda^*$) that minimizes this time.
 
-## Główne Funkcjonalności:
-* **Analiza teoretyczna:** Obliczanie dokładnych wartości MFPT na podstawie wzoru analitycznego oraz wyznaczanie teoretycznego optimum za pomocą biblioteki `scipy.optimize`.
-* **Symulacje Monte Carlo:** Szybka implementacja numeryczna błądzenia losowego (Random Walk) z resetowaniem, zoptymalizowana przy użyciu kompilatora JIT (biblioteka `numba`).
-* **Weryfikacja wyników (Backtesting):** Obliczanie błędów dopasowania symulacji do teorii za pomocą wskaźników **MAPE** (Mean Absolute Percentage Error) oraz **RMSE**.
-* **Wizualizacja:** Generowanie wykresów porównujących ciągłą krzywą teoretyczną z punktami uzyskanymi drogą symulacji numerycznej.
+## Main Features:
+* **Theoretical Analysis:** Calculation of exact MFPT values based on analytical formulas and determination of the theoretical optimum using the `scipy.optimize` library.
+* **Monte Carlo Simulations:** High-performance numerical implementation of a random walk with resetting, optimized using the JIT compiler (`numba` library).
+* **Validation (Backtesting):** Calculation of fitting errors between simulation and theory using **MAPE** (Mean Absolute Percentage Error) and **RMSE** (Root Mean Square Error) metrics.
+* **Visualization:** Generation of plots comparing the continuous theoretical curve with data points obtained through numerical simulations.
 
-## Wykorzystane Technologie:
+## Technologies Used:
 Python (NumPy, Matplotlib, Numba, SciPy).
